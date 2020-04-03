@@ -21,7 +21,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
- management:
+
+management:
   endpoint:
     metrics.enabled: true
     prometheus.enabled: true
