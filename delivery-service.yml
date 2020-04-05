@@ -31,4 +31,4 @@ management:
   security:
     enabled: false
 
-can-send: false
+can-send: true
