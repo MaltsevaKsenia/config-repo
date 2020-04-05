@@ -32,3 +32,4 @@ management:
     enabled: false
 
 can-send: true
+can-calncel: true
