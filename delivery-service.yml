@@ -31,5 +31,5 @@ management:
   security:
     enabled: false
 
-can-send: true
-can-cancel: true
+can-send: false
+can-cancel: false
