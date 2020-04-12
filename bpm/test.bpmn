@@ -9,7 +9,7 @@
     <bpmn:intermediateCatchEvent id="IntermediateThrowEvent_1c5o18h">
       <bpmn:incoming>SequenceFlow_02c051c</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1umn6ka</bpmn:outgoing>
-      <bpmn:messageEventDefinition messageRef="Message_0h4z1jr" />
+      <bpmn:messageEventDefinition messageRef="Message_0x6ipym" />
     </bpmn:intermediateCatchEvent>
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>SequenceFlow_02c051c</bpmn:outgoing>
@@ -21,7 +21,7 @@
       <bpmn:sequenceFlow id="SequenceFlow_0rkklpa" sourceRef="StartEvent_0p20loi" targetRef="EndEvent_16s034g" />
       <bpmn:startEvent id="StartEvent_0p20loi">
         <bpmn:outgoing>SequenceFlow_0rkklpa</bpmn:outgoing>
-        <bpmn:messageEventDefinition />
+        <bpmn:messageEventDefinition messageRef="Message_0h4z1jr" />
       </bpmn:startEvent>
     </bpmn:subProcess>
   </bpmn:process>
