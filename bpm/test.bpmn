@@ -14,16 +14,6 @@
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>SequenceFlow_02c051c</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:subProcess id="SubProcess_06owrz0">
-      <bpmn:endEvent id="EndEvent_16s034g">
-        <bpmn:incoming>SequenceFlow_0rkklpa</bpmn:incoming>
-      </bpmn:endEvent>
-      <bpmn:sequenceFlow id="SequenceFlow_0rkklpa" sourceRef="StartEvent_0p20loi" targetRef="EndEvent_16s034g" />
-      <bpmn:startEvent id="StartEvent_0p20loi">
-        <bpmn:outgoing>SequenceFlow_0rkklpa</bpmn:outgoing>
-        <bpmn:messageEventDefinition messageRef="Message_0h4z1jr" />
-      </bpmn:startEvent>
-    </bpmn:subProcess>
   </bpmn:process>
   <bpmn:message id="Message_0h4z1jr" name="message">
     <bpmn:extensionElements>
@@ -53,19 +43,6 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="StartEvent_1n8ryx8_di" bpmnElement="StartEvent_1">
         <dc:Bounds x="179" y="99" width="36" height="36" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="SubProcess_06owrz0_di" bpmnElement="SubProcess_06owrz0" isExpanded="true">
-        <dc:Bounds x="260" y="150" width="350" height="200" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="EndEvent_16s034g_di" bpmnElement="EndEvent_16s034g">
-        <dc:Bounds x="472" y="232" width="36" height="36" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_0rkklpa_di" bpmnElement="SequenceFlow_0rkklpa">
-        <di:waypoint x="336" y="250" />
-        <di:waypoint x="472" y="250" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="StartEvent_0uvy6f5_di" bpmnElement="StartEvent_0p20loi">
-        <dc:Bounds x="300" y="232" width="36" height="36" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
