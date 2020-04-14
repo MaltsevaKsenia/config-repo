@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_0dc27wg" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Zeebe Modeler" exporterVersion="0.8.0">
+  <bpmn:process id="test_process3l3" isExecutable="true">
+    <bpmn:sequenceFlow id="SequenceFlow_02c051c" sourceRef="StartEvent_1" targetRef="IntermediateThrowEvent_1c5o18h" />
+    <bpmn:endEvent id="EndEvent_0kquolw">
+      <bpmn:incoming>SequenceFlow_1umn6ka</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1umn6ka" sourceRef="IntermediateThrowEvent_1c5o18h" targetRef="EndEvent_0kquolw" />
+    <bpmn:intermediateCatchEvent id="IntermediateThrowEvent_1c5o18h">
+      <bpmn:incoming>SequenceFlow_02c051c</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1umn6ka</bpmn:outgoing>
+      <bpmn:messageEventDefinition messageRef="Message_0x6ipym" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>SequenceFlow_02c051c</bpmn:outgoing>
+    </bpmn:startEvent>
+  </bpmn:process>
+  <bpmn:message id="Message_0h4z1jr" name="message">
+    <bpmn:extensionElements>
+      <zeebe:subscription correlationKey="correlationKey" />
+    </bpmn:extensionElements>
+  </bpmn:message>
+  <bpmn:message id="Message_0x6ipym" name="message2">
+    <bpmn:extensionElements>
+      <zeebe:subscription correlationKey="correlationKey" />
+    </bpmn:extensionElements>
+  </bpmn:message>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="test_process3l3">
+      <bpmndi:BPMNEdge id="SequenceFlow_02c051c_di" bpmnElement="SequenceFlow_02c051c">
+        <di:waypoint x="215" y="117" />
+        <di:waypoint x="392" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_0kquolw_di" bpmnElement="EndEvent_0kquolw">
+        <dc:Bounds x="642" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1umn6ka_di" bpmnElement="SequenceFlow_1umn6ka">
+        <di:waypoint x="428" y="117" />
+        <di:waypoint x="642" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="IntermediateCatchEvent_1963rmj_di" bpmnElement="IntermediateThrowEvent_1c5o18h">
+        <dc:Bounds x="392" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="StartEvent_1n8ryx8_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
