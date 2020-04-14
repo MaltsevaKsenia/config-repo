@@ -15,7 +15,7 @@
       <bpmn:outgoing>SequenceFlow_02c051c</bpmn:outgoing>
     </bpmn:startEvent>
   </bpmn:process>
-  <bpmn:message id="Message_0h4z1jr" name="message">
+  <bpmn:message id="Message_0h4z1jr" name="message_test">
     <bpmn:extensionElements>
       <zeebe:subscription correlationKey="correlationKey" />
     </bpmn:extensionElements>
