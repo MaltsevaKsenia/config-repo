@@ -9,7 +9,7 @@
     <bpmn:intermediateCatchEvent id="IntermediateThrowEvent_1c5o18h">
       <bpmn:incoming>SequenceFlow_02c051c</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1umn6ka</bpmn:outgoing>
-      <bpmn:messageEventDefinition messageRef="Message_0x6ipym" />
+      <bpmn:messageEventDefinition messageRef="Message_0x6ipymww" />
     </bpmn:intermediateCatchEvent>
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>SequenceFlow_02c051c</bpmn:outgoing>
